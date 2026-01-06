@@ -29,6 +29,7 @@ cmake-build-*/
 out/
 bin/
 lib/
+.cache/
 
 # =========================
 # CMake

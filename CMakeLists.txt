@@ -49,7 +49,7 @@ endif()
 # -------------------------------------------------
 option(ENABLE_SANITIZERS "Enable sanitizers in Debug builds" ON)
 
-if (ENABLE_SANITIZERS AND NOT MSVC)
+if (ENABLE_SANITIZERS AND NOT MSVC AND NOT WIN32)
     add_compile_options(
         $<$<CONFIG:Debug>:-fsanitize=address,undefined>
         $<$<CONFIG:Debug>:-fno-omit-frame-pointer>
@@ -63,7 +63,7 @@ endif()
 # Subdirectories
 # -------------------------------------------------
 # TODO:Uncomment when subdirectories added
-#add_subdirectory(basics)
+add_subdirectory(basics)
 #add_subdirectory(memory)
 #add_subdirectory(stl)
 #add_subdirectory(templates)
