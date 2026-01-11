@@ -1,3 +1,4 @@
 add_subdirectory(01_types)
 add_subdirectory(02_references_pointers)
 add_subdirectory(03_memory_lifetimes)
+add_subdirectory(04_smart_pointers)
