@@ -1,0 +1,3 @@
+add_executable(vectors_maps_algorithms
+	vectors_maps_algorithms.cpp
+)
